@@ -1,19 +1,18 @@
 .wrapper
     display: grid
-
+    grid-template-rows: auto auto
     grid-template-areas: "header" "main"
     
 body
     background-color: #D3C2C2
-
     margin: 0
     
 
 header
-    width: 100vw
-    height: 50px
+    width: 100%
+    height: 125%
     display: flex
-
+    grid-area: header
     background-color: #E4AA9B
 
 .header-item
@@ -21,69 +20,86 @@ header
     top: 50%
     transform: translateY(-50%)
     line-height: 50px !important
-    font-size: 36px !important
+    font-size: 48px !important
 
 .header-left
-    width: 30vw
-    margin-right: 10vw
+    width: 30%
+    margin-right: 10%
 
 .header-right
     display: inherit
     justify-content: flex-end
-    width: 70vw
-    margin-left: 10vw
+    width: 70%
+    margin-left: 10%
 
 #cart
-    margin-right: 4vw
+    margin-right: 4%
+    height: 50px
 
 #search
-    margin-right: 1vw
+    margin-right: 4%
+    height: 50px
 
 #menu
-    margin-left: 4vw
+    margin-left: 4%
+
+main
+    grid-area: main
+    width: 100%
+
+
 
 .items-title
-    font-size: 26px
+    font-size: 36px
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 
-    margin-top: 3vh
-    margin-left: 9vw
+    margin-top: 4%
+    margin-left: 9%
 
 .items-display
-    width: 80vw
+    width: 80%
     height: 80vh
     align-self: center
     margin-top: 2vh
-    margin-left: 10vw
+    margin-left: 10%
 
 
 .item
     width: 100%
-    height: 30%
+    height: 50%
     border-style: solid
     border-radius: 20px
 
-    margin-top: 4%
 
-.item-content
-    height: 100%
-    width: 100%
-    border-radius: inherit
     overflow: hidden
+    margin-top: 4%
     
 .item-image
-    position: relative
+    background-image: url("../img/seawater_1.png")
+
+    display: flex
     height: 100%
     width: 100%
     overflow: hidden
+    align-items: flex-end
+    justify-content: center
 
     border-style: solid
 
 .item-info
+    margin-bottom: 10%
+    padding: 0
     height: 20%
-    width: 100%
-    background-color: white
-
-
-
+    width: 80%
+    background-color: black
+    opacity: 0.8
+    border-radius: 20px
     
+    text-align: center
+    line-height: 48px
+    color: white
+
+
+.ham_menu
+    background-color: #968787
+    width: 25%
