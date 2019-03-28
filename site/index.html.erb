@@ -1,11 +1,12 @@
 <div class="wrapper">
     <header>
         <div class="header-left">
-            <i class="material-icons header-item" id="menu">menu</i>
+            <i class="material-icons header-item" id="menu" onclick="menuToggle()">menu</i>
+            <a class="material-icons header-item" id="home" style="opacity: 0.6;">home</a>
         </div>
         <div class="header-right">
             <i class="material-icons header-item" id="search">search</i>
-            <i class="material-icons header-item" id="cart">shopping_cart</i>
+            <a class="material-icons header-item" id="cart" href="cart.html">shopping_cart</a>
         </div>
     </header>
     <main>
@@ -16,14 +17,17 @@
                 <li>Funky Seawater</li>
                 <li>Seeable Seawater</li>
             </ul>
+            <a class="about-us" href="about.html">About us</a>
         </div>
-        <div class="items-title">Featured Items</div>
+        <div class="items-title">Featured Items:</div>
         <div class="items-display">
+          <a class="product-link" href="product.html">
             <div class="item">
                 <div class="item-image">
                     <div class="item-info">Very Tasty Seawater - $5/l</div>
                 </div>
             </div>
+          </a>
             <div class="item">
                 <div class="item-image">
                     <div class="item-info">Lemon Seawater - $7/l</div>
@@ -31,11 +35,26 @@
             </div>
             <div class="item">
                 <div class="item-image">
-                    <div class="item-info">Seawater (as seen on tv) - $12/l</div>
+                    <div class="item-info">Seawater (as SEAn on tv) - $12/l</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <div class="item-info">Seawater with hint of sea - $14/l</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <div class="item-info">Eau de Mer - $18/l</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <div class="item-info">Acqua di Mare - $22/l</div>
                 </div>
             </div>
         </div>
-        
+
     </main>
-    
+
 </div>
