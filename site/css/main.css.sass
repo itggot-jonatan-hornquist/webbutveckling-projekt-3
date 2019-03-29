@@ -67,16 +67,22 @@ main
     display: flex
     flex-direction: column
 
-    background-color: grey
+    background-color: #D2D2D2
     width: 70%
     position: absolute
     border-radius: 20px
-    margin-left: 2.5%
-    margin-top: 4%
     z-index: 1000
+    position: absolute
+    top: 10%
+
 
     transform: translateX(-1000px)
     transition: transform 0.2s ease
+
+#ham-title
+    margin: 0
+    font-size: 36px
+    font-weight: bold
 
 .menu-clicked
     transform: translateX(0)
@@ -88,9 +94,8 @@ main
     padding-left: 15px
 
 .ham-menu li
-    margin-bottom: 15px
-    border-bottom: solid
     width: 80%
+    text-decoration: underline
 
 .about-us
     font-size: 36px
@@ -331,3 +336,28 @@ main
     font-size: 32px
     color: white
     text-align: center
+
+@media only screen and (min-device-width: 850px)
+    #menu
+        display: none
+        
+    .wrapper
+        grid-template-rows: 10% auto
+        grid-template-columns: 25% auto
+        grid-template-areas: "header header" "menu main"
+
+    .ham-menu
+        transform: translateX(0)
+        grid-area: menu
+        position: static
+        width: 100%
+        border-radius: 0
+
+
+    header
+        grid-area: header
+        height: 100%
+        width: 100%
+        margin: 0
+        
+
